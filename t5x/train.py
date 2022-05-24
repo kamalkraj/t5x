@@ -110,7 +110,7 @@ def train(
     actions: Optional[Mapping[str, Sequence[trainer_lib.BaseAction]]] = None,
     train_eval_get_dataset_fn: Optional[utils.GetDatasetCallable] = None,
     run_eval_before_training: bool = False,
-    use_gda: bool = False) -> Tuple[int, train_state_lib.TrainState]:
+    use_gda: bool = True) -> Tuple[int, train_state_lib.TrainState]:
   """Train function.
 
   Args:

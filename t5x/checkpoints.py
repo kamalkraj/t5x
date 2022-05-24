@@ -425,7 +425,7 @@ class Checkpointer(object):
                keep: Optional[int] = None,
                save_dtype: jnp.dtype = np.float32,
                restore_dtype: Optional[jnp.dtype] = None,
-               use_gda: Optional[bool] = False,
+               use_gda: Optional[bool] = True,
                keep_dataset_checkpoints: Optional[int] = None):
     """Checkpointer constructor.
 
